@@ -1,0 +1,6 @@
+setup:
+  - echo "agent setup: tooling check" && node --version && echo "ready"
+mcp:
+  - name: memory
+    command: npx
+    args: ["-y", "@modelcontextprotocol/server-memory"]
