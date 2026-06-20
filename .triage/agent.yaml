@@ -1,6 +1,8 @@
 setup:
-  - echo "agent setup: tooling check" && node --version && echo "ready"
+  - 'echo "agent setup running in the runner" && node --version && echo ready'
 mcp:
   - name: memory
     command: npx
-    args: ["-y", "@modelcontextprotocol/server-memory"]
+    args:
+      - "-y"
+      - "@modelcontextprotocol/server-memory"
